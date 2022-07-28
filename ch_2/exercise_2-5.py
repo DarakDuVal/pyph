@@ -12,7 +12,7 @@ y_shifted = np.roll(y, -1)
 x_diff = abs(x - x_shifted)
 y_sums = y + y_shifted
 area = .5 * np.sum(x_diff * y_sums)
-print(f'Flowerbed area: {area:5.1f}')
+print(f'Flowerbed area is {area:.1f} length units²')
 
 fig = plt.figure()
 plt.fill(x, y, facecolor='green')
