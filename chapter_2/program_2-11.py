@@ -29,8 +29,8 @@ def update(n):
 
     return plot, text
 
-# ani = matplotlib.animation.FuncAnimation(fig, update, interval=30, blit=True)
-# plt.show()
+ani = matplotlib.animation.FuncAnimation(fig, update, interval=30, blit=True)
+plt.show()
 
-ani = matplotlib.animation.FuncAnimation(fig, update, frames=1000, blit=True)
-ani.save('animated_sine.mpg', fps=30)
+# ani = matplotlib.animation.FuncAnimation(fig, update, frames=1000, blit=True)
+# ani.save('animated_sine.mpg', fps=30)
